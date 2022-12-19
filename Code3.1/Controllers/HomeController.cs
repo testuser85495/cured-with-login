@@ -77,7 +77,7 @@ namespace Code3._1.Controllers
         }
         [HttpPost]
         public IActionResult Update(Student stu)
-        {
+            {
             db.students.Update(stu);
             db.SaveChanges();
             return Json("record update");
